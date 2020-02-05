@@ -33,7 +33,59 @@
 \begin{enumerate}
     \item 
     
+    \begin{equation*}
+        \begin{aligned}
+            a_{1}t + ... + a_{k}t^{k} &\geq 1 \\
+            -a_{1}t - ... - a_{k}t^{k} &\leq -1 \text{, also} \\
+            a_{1}\text{cos} t + ... + a_{k} \text{cos} kt &\leq 1 \text{, hence} \\
+            \sum_{l=1}^{k} a_{l}(\text{cos} lt - t^{l}) &\leq 0
+        \end{aligned}
+    \end{equation*}
+    
+    Take two points, $ x $ and $ y $ out of the set, apply the definition:
+    
+    \begin{equation*}
+        A = \theta \sum_{l=1}^{k} x_{l}(\text{cos} lt - t^{l}) + (1-\theta) \sum_{l=1}^{k} y_{l}(\text{cos} lt - t^{l})
+    \end{equation*}
+    
+    Both summation are $ \leq 0 $, also $ 0 \leq \theta \leq 1 $ and $ 0 \leq 1 - \theta \leq 1 $. Therefore $ A \leq 0 $ and the set is convex.
+    
     \item
+    
+    \begin{enumerate}
+        \item $ (c, d) = (-ka, ka), k\in \mathbb{R}^{+}$. The line segment connecting $ c $ and $ d $ is bisected by the plane $ a x = b $. $ c $ is on the side of the plane that contains the halfspace. $ d $ is not on the side of the plane that contains the halfspace.
+        
+        \item If the planes $ a x = 1 $ and $ a' x = 1 $ are parallel to each other, plane $ a x = 1 $ bisects the line segment connecting $ c $ and $ d $ and plane $ a' x = 1 $ bisects the line segment connecting $ c $ and $ e $. The set is the intersection between the two halfspaces, i.e. the space between the two parallel planes. $ a $ and $ a' $ should be pointing at exactly the opposite directions and may have different lengths. Let:
+        
+        \begin{equation*}
+            \begin{aligned}
+                a = - k a'
+            \end{aligned}
+        \end{equation*}
+        
+        Therefore:
+        
+        \begin{equation*}
+            \begin{aligned}
+                c & = - k a = a' \\
+                d &= k a \\
+                e & = a' \\
+                k a + a' &= 0 \\
+                - k a - a' &= 0 \text{, for }k \in \mathbb{R}^{+}
+            \end{aligned}
+        \end{equation*}
+    \end{enumerate}
+    
+    If the planes $ a x = 1 $ and $ a' x = 1 $ are perpendicular to each other, plane $ a x = 1 $ bisects the line segment connecting $ c $ and $ d $ and plane $ a' x = 1 $ bisects the line segment connecting $ c $ and $ e $. The set is the intersection between the two halfspaces, i.e. the space between the two perpendicular planes. $ a $ and $ a' $ should be pointing at perpendicular directions and may have different lengths. Let:
+    
+    \begin{equation*}
+        \begin{aligned}
+            ||a||_2 &= k ||a'||_2 \text{, which } k \in \mathbb{R}^{+} \text{, and } \\
+            a \cdot a' &= 0
+        \end{aligned}
+    \end{equation*}
+    
+    Therefore:
     
     \item
     
