@@ -31,7 +31,7 @@
 \begin{document}
 
 \begin{enumerate}
-    \item 
+    \item %Q1
     
     \begin{equation*}
         \begin{aligned}
@@ -50,7 +50,7 @@
     
     Both summation are $ \leq 0 $, also $ 0 \leq \theta \leq 1 $ and $ 0 \leq 1 - \theta \leq 1 $. Therefore $ A \leq 0 $ and the set is convex.
     
-    \item
+    \item %Q2
     
     \begin{enumerate}
         \item $ (c, d) = (-ka, ka), k\in \mathbb{R}^{+}$. The line segment connecting $ c $ and $ d $ is bisected by the plane $ a x = b $. $ c $ is on the side of the plane that contains the halfspace. $ d $ is not on the side of the plane that contains the halfspace.
@@ -74,26 +74,92 @@
                 - k a - a' &= 0 \text{, for }k \in \mathbb{R}^{+}
             \end{aligned}
         \end{equation*}
+        
+         If the planes $ a x = 1 $ and $ a' x = 1 $ are perpendicular to each other, plane $ a x = 1 $ bisects the line segment connecting $ c $ and $ d $ and plane $ a' x = 1 $ bisects the line segment connecting $ c $ and $ e $. The set is the intersection between the two halfspaces, i.e. the space between the two perpendicular planes. $ a $ and $ a' $ should be pointing at perpendicular directions and may have different lengths. Let:
+    
+        \begin{equation*}
+            \begin{aligned}
+                ||a||_2 &= k ||a'||_2 \text{, which } k \in \mathbb{R}^{+} \text{, and } \\
+                a \cdot a' &= 0
+            \end{aligned}
+        \end{equation*}
+        
+        Therefore:
+        
+        \begin{equation*}
+            \begin{aligned}
+                c &= -a = - k a' \\
+                d &= a \\
+                e &= k a' \text{, which } k \in \mathbb{R}^{+}
+            \end{aligned}
+        \end{equation*}
     \end{enumerate}
     
-    If the planes $ a x = 1 $ and $ a' x = 1 $ are perpendicular to each other, plane $ a x = 1 $ bisects the line segment connecting $ c $ and $ d $ and plane $ a' x = 1 $ bisects the line segment connecting $ c $ and $ e $. The set is the intersection between the two halfspaces, i.e. the space between the two perpendicular planes. $ a $ and $ a' $ should be pointing at perpendicular directions and may have different lengths. Let:
+    The perpendicular case solution also applies to the case when two planes intersect but not perpendicular.
+    
+    \item %Q3
+    
+    \begin{enumerate}
+        \item 
+        
+        \item
+        
+        \item
+    \end{enumerate}
+    
+    \item %Q4
+    
+    \begin{enumerate}
+        \item Let $ S_3 $ be the sum of $ S_1 $ and $ S_2 $:
+        
+        \begin{equation*}
+            \begin{aligned}
+                a \text{, } b \in S_1 \text{, } c \text{, } d \in S_2 \text{, } e \text{, } f \in S_3 \text{, and } e &= a + c \text{, } f = b + d \\
+                \theta e + (1 - \theta) f = \theta (a + c) + (1 - \theta) (b + d) &= ( \theta a + (1 - \theta) b) + ( \theta c + (1 - \theta) d) \in S_1 + S_2 = S_3
+            \end{aligned}
+        \end{equation*}
+        
+        The set is convex.
+        
+        \item
+    \end{enumerate}
+    
+    \item %Q5
+    
+    \begin{enumerate}
+        \item The set $ S $ is the plane separating $ C $ and $ D $. Based on the separating hyperplane theorem, $ C $ and $ D $ are two disjoint and convex sets, $ S $ is the plane separating the two sets. Hence $ S $ is convex.
+        
+        \item The set $ S $ is not convex. As required by the separating hyperplane theorem, two sets need to be convex and disjoint.
+        
+        \item The set $ S $ is not convex and may be empty. If there were overlaps between set $ C $ and $ D $, separation between the two sets is not possible.
+    \end{enumerate}
+    
+    \newpage
+    
+    \item %Q6
+    
+    $ f $ is concave, according to the first order condition:
     
     \begin{equation*}
         \begin{aligned}
-            ||a||_2 &= k ||a'||_2 \text{, which } k \in \mathbb{R}^{+} \text{, and } \\
-            a \cdot a' &= 0
+            f(x) &\leq f(a) + f'(a)(x-a) \\
+            \frac{f(x) - f(a)}{x-a} &\leq f'(a) \\
+            f(x) &\leq f(b) + f'(b)(x-b) \\
+            \frac{f(x) - f(b)}{x-b} &\leq f'(b) \\
+            a &< b \text{, therefore,} \\
+            f'(a) &> f'(b) \\
+            \frac{f(x) - f(a)}{x-a} &\geq \frac{f(x) - f(b)}{x-b} \\
+            \frac{f(x) - f(a)}{x-a} &\geq \frac{f(b) - f(x)}{b-x} \\
+            f(b) &\leq f(a) + f'(a)(b-a) \\
+            \frac{f(b) - f(a)}{b-a} &\leq f'(a) \\
+            f(a) &\geq f(b) + f'(b)(a-b) \\
+            \frac{f(a) - f(b)}{a-b} &\geq f'(b) \text{, put together,} \\
+            \frac{f(x) - f(a)}{x-a} &\geq \frac{f(a) - f(b)}{a-b} \geq \frac{f(b) - f(x)}{b-x} \\
+            \frac{f(x) - f(a)}{x-a} &\geq \frac{f(b) - f(a)}{b-a} \geq \frac{f(b) - f(x)}{b-x} \\
         \end{aligned}
     \end{equation*}
     
-    Therefore:
-    
-    \item
-    
-    \item
-    
-    \item
-    
-    \item 
+    If the function is twice differentiable, then a global maximum exists and the function is smooth and continuous.
     
     \item
     
